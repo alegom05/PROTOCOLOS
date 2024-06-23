@@ -1,0 +1,50 @@
+Dec 12 01:13:55.148 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 12 01:13:55.151 HYPERVISOR: Started on IP = localhost, TCP port = 54178.
+Dec 12 01:13:55.646 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 01:13:55.648 HYPERVISOR: exec_cmd: hypervisor working_dir G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips 
+Dec 12 01:13:55.650 GENERAL: working_dir=G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips
+Dec 12 01:13:55.650 HYPERVISOR: exec_cmd: hypervisor working_dir G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips\76fca132-9153-40aa-9044-bff6fbae8b1c 
+Dec 12 01:13:55.651 GENERAL: working_dir=G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips\76fca132-9153-40aa-9044-bff6fbae8b1c
+Dec 12 01:13:55.652 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Dec 12 01:13:55.660 VM: VM R4 created.
+Dec 12 01:13:55.662 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5006 
+Dec 12 01:13:55.662 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Dec 12 01:13:55.663 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:13:55.663 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Dec 12 01:13:55.664 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Dec 12 01:13:55.664 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Dec 12 01:13:55.664 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:13:55.665 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60189214 
+Dec 12 01:13:55.665 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/unbotcomotu/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 12 01:13:55.666 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.30c0.0000 
+Dec 12 01:13:55.666 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Dec 12 01:13:55.667 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Dec 12 01:13:55.667 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:13:55.667 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Dec 12 01:13:55.668 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:13:55.668 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-GE-E 
+Dec 12 01:13:55.668 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:13:55.668 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-GE 
+Dec 12 01:13:55.669 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:13:55.669 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-4T+ 
+Dec 12 01:13:59.247 HYPERVISOR: exec_cmd: nio create_udp udp-d6d776bd-1276-434b-b6f9-c58ba2d607cc 10018 127.0.0.1 10019 
+Dec 12 01:13:59.487 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-d6d776bd-1276-434b-b6f9-c58ba2d607cc 
+Dec 12 01:13:59.488 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:14:00.389 HYPERVISOR: exec_cmd: nio create_udp udp-fba23449-6a5a-4fd7-a154-b3a5c4b997ea 10038 127.0.0.1 10039 
+Dec 12 01:14:00.390 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 2 1 udp-fba23449-6a5a-4fd7-a154-b3a5c4b997ea 
+Dec 12 01:14:00.391 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:14:00.909 HYPERVISOR: exec_cmd: nio create_udp udp-ea2f6c77-958a-41a1-9f70-83f45fbdd052 10052 127.0.0.1 10053 
+Dec 12 01:14:00.911 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-ea2f6c77-958a-41a1-9f70-83f45fbdd052 
+Dec 12 01:14:00.912 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:15:02.092 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Dec 12 01:15:02.102 HYPERVISOR: exec_cmd: vm set_ghost_file R4 G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Dec 12 01:15:02.104 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 01:15:02.113 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg 
+Dec 12 01:15:02.114 HYPERVISOR: exec_cmd: vm start R4 
+Dec 12 03:41:02.784 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 12 03:41:02.784 HYPERVISOR: exec_cmd: vm stop R4 
+Dec 12 03:41:03.004 VM: VM R4 shutdown.
+Dec 12 03:41:03.007 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 12 03:45:34.895 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/unbotcomotu/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 12 03:45:34.896 HYPERVISOR: exec_cmd: vm rename R4 R3ISP1 
+Dec 12 03:45:35.017 HYPERVISOR: exec_cmd: vm set_ios R3ISP1 C:/Users/unbotcomotu/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 

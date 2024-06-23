@@ -1,0 +1,47 @@
+Dec 12 01:13:53.352 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 12 01:13:53.356 HYPERVISOR: Started on IP = localhost, TCP port = 54168.
+Dec 12 01:13:53.809 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 01:13:53.810 HYPERVISOR: exec_cmd: hypervisor working_dir G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips 
+Dec 12 01:13:53.812 GENERAL: working_dir=G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips
+Dec 12 01:13:53.812 HYPERVISOR: exec_cmd: hypervisor working_dir G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips\a41ed202-c1c9-4e97-902d-55197372cc45 
+Dec 12 01:13:53.813 GENERAL: working_dir=G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips\a41ed202-c1c9-4e97-902d-55197372cc45
+Dec 12 01:13:53.815 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Dec 12 01:13:53.824 VM: VM R2 created.
+Dec 12 01:13:53.825 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Dec 12 01:13:53.825 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Dec 12 01:13:53.825 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:13:53.825 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Dec 12 01:13:53.826 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 12 01:13:53.826 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Dec 12 01:13:53.827 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:13:53.827 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60189214 
+Dec 12 01:13:53.829 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/unbotcomotu/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 12 01:13:53.829 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.109c.0000 
+Dec 12 01:13:53.830 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Dec 12 01:13:53.830 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Dec 12 01:13:53.830 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:13:53.831 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Dec 12 01:13:53.831 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:13:53.832 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-GE-E 
+Dec 12 01:13:53.832 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:13:53.832 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-GE 
+Dec 12 01:13:53.833 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:13:53.833 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-4T+ 
+Dec 12 01:13:58.574 HYPERVISOR: exec_cmd: nio create_udp udp-c493159b-5a5d-48a8-a8a9-cf0820af0ca8 10008 127.0.0.1 10009 
+Dec 12 01:13:58.817 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-c493159b-5a5d-48a8-a8a9-cf0820af0ca8 
+Dec 12 01:13:58.818 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:13:59.822 HYPERVISOR: exec_cmd: nio create_udp udp-6ba17541-824f-40a9-a3ed-020b0f3715c1 10024 127.0.0.1 10025 
+Dec 12 01:13:59.824 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-6ba17541-824f-40a9-a3ed-020b0f3715c1 
+Dec 12 01:13:59.825 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:15:01.700 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 12 01:15:01.710 HYPERVISOR: exec_cmd: vm set_ghost_file R2 G:\My Drive\PUCP\CURSOS 6TO CICLO\Protocolos de Enrutamiento\projects\proyectoFinal\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Dec 12 01:15:01.711 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 01:15:01.722 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Dec 12 01:15:01.723 HYPERVISOR: exec_cmd: vm start R2 
+Dec 12 03:41:02.506 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 03:41:02.508 HYPERVISOR: exec_cmd: vm stop R2 
+Dec 12 03:41:02.701 VM: VM R2 shutdown.
+Dec 12 03:41:02.734 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 12 03:45:09.592 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/unbotcomotu/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 12 03:45:09.593 HYPERVISOR: exec_cmd: vm rename R2 R2Central 
+Dec 12 03:45:09.715 HYPERVISOR: exec_cmd: vm set_ios R2Central C:/Users/unbotcomotu/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
